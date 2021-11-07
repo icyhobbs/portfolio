@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: ghostwhite;
+  padding: 5px;
+}
+
+header h1 {
+  font-size: 16pt;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 115%;
+}
+nav a {
+  color: ghostwhite;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-right: 20px;
+}
+nav a:hover {
+  background-color: ghostwhite;
+  color: blue;
+}
+
+.pic {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border: solid black;
+  background-color: black;
+  max-height: 80px;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+  border: solid black;
+}
+.wrapper div {
+  width: 400px;
+  height: 275px;
+  text-align: center;
+  border: 12px solid ghostwhite;
+  color: ghostwhite;
+}
+.resume {
+  background-color: rgba(164, 178, 190, 0.568);
+}
+.wrapper div h2 {
+  padding: 120px 0 0px;
+  color: ghostwhite;
+}
+.wrapper div a {
+  color: ghostwhite;
+}
+.work {
+  background-color: rgba(164, 178, 190, 0.568);
+}
+.pic2 {
+  border: solid ghostwhite;
+  background-color: black;
+  color: ghostwhite;
+  height: 80px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: ghostwhite;
+}
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-size: 115%;
+  color: ghostwhite;
+  text-align: center;
+  flex-direction: row;
+  padding: 10px;
+  min-width: 400px;
+}
+
+footer ul a {
+  color: ghostwhite;
+  text-decoration: none;
+}
+footer a:hover {
+  background-color: ghostwhite;
+  color: blue;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 24pt;
+    margin-bottom: 0;
+  }
+  .wrapper div.resume {
+    width: 600px;
+  }
+  .wrapper div.work {
+    width: 600px;
+  }
+  .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
